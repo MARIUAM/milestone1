@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Static Interactive Resume</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .resume-container {
+      display: flex;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .left-section, .right-section {
+      padding: 20px;
+    }
+    .left-section {
+      width: 35%;
+      background-color: #f4f4f4;
+      border-radius: 8px;
+    }
+    .right-section {
+      width: 65%;
+      padding-left: 20px;
+    }
+    h1, h3 {
+      color: #f3aa0b;
+      font-family: 'Helvetica', sans-serif;
+    }
+    .profile-picture {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      display: block;
+      margin: 10px auto;
+    }
+    p, li {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #555;
+    }
+    p a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    .section-title {
+      font-size: 20px;
+      color: #333;
+      font-weight: bold;
+      border-bottom: 2px solid #007bff;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    .experience-icon {
+      color: #007bff;
+      margin-right: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="resume-container">
+    <!-- Left Section -->
+    <div class="left-section">
+      <img src="download.jpg" alt="profile picture" class="profile-picture">
+      <section id="objective">
+        <h3>Career Objective</h3>
+        <p>
+          I am Maryam Saleem, a web developer and an enthusiastic student of Web 3.0, focused on creating impactful, modern websites. I blend creativity with technical skills to build user-friendly experiences and am always eager to explore the latest advancements in web development.
+        </p>
+      </section>
+      <section id="Certification">
+        <h3>Degree</h3>
+        <p>Intermediate</p>
+        <p>Graphic Designing</p>
+        <p>Freelancing</p>
+      </section>
+    </div>
+
+    <!-- Right Section -->
+    <div class="right-section">
+      <h1>Static Interactive Resume</h1>
+      <!-- Personal Information -->
+      <section id="personal-info">
+        <h3 class="section-title">Personal Information</h3>
+        <p><b>Name:</b> Maryam Saleem</p>
+        <p><b>Phone:</b> [Your Phone Number]</p>
+        <p><b>Email:</b> <a href="mailto:maryamsaleem20102001@gmail.com">maryamsaleem20102001@gmail.com</a></p>
+        <p><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/maryam-saleem-b5696b323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">My LinkedIn Profile</a></p>
+      </section>
+
+      <!-- Education Section -->
+      <section id="education">
+        <h3 class="section-title">Education</h3>
+        <p><b>Intermediate:</b> Pre-Engineering</p>
+        <p><b>Matriculation:</b> Computer Science (Karachi Board)</p>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills">
+        <h3 class="section-title">Skills</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>TypeScript</li>
+          <li>Next.js</li>
+        </ul>
+      </section>
+
+      <!-- Work Experience Section -->
+      <section id="work-experience">
+        <h3 class="section-title">
+          <i class="fas fa-briefcase experience-icon"></i> Experience
+        </h3>
+        <p><b>Graphic Designer</b> - Internship</p>
+      </section>
+
+      <!-- Optional Button for Interactive Effect -->
+      <button id="toggle-skills"><b>Hide/Show Skills</b></button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
